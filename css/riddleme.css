@@ -1,0 +1,521 @@
+body{
+      font-family: fantasy;
+    
+}
+#first{
+    background-color: rgb(22,142,205) ;
+}
+#second{
+   background-color: rgb(22,142,205) ; 
+}
+#third{
+    background-color: rgb(22,142,205) ;
+}
+#fourth{
+    background-color: rgb(22,142,205) ;
+}
+button{
+  font-size: 22px;
+  background-color: #279;
+  color: #fff; 
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+    color: rgb(213, 230, 242);
+  }
+button:hover{
+  background-color: #38a;
+  }
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  }
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+  }
+.slide1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  }
+.active-slide1{
+  opacity: 1;
+  z-index: 2;
+  }
+
+  .footer{
+    font-size: 10px;
+   }
+  #homeTitle{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(213, 230, 242);
+    }
+  #homebtnsettings{
+    position: absolute;
+    bottom: 5%;
+    left: 10px; 
+    padding: 20px;
+      background-color: rgb(213, 230, 242);
+    }
+  #restart{
+    position: absolute;
+    bottom: 15%;
+    left:15%;
+    right: 15%; 
+    font-size: 1.3em;
+      background-color: rgb(213, 230, 242);
+    }
+  #home{
+    position: absolute;
+    bottom: 10px;
+    left: 5%;  
+      background-color: rgb(213, 230, 242);
+    }
+   #reset{
+    position: absolute;
+    bottom: 5%;
+    right: 0; 
+    }
+#resetme{
+   background-color: rgb(213, 230, 242); 
+}
+
+    #next{  
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+      background-color: rgb(213, 230, 242);
+    }
+    #next1{
+    position: absolute;
+    right: 10px;
+    bottom:10px; 
+        background-color: rgb(213, 230, 242);
+   }
+  #submit{
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+      background-color: rgb(213, 230, 242);
+    }
+  #previous{
+    position: absolute;
+    left: 5%;
+    bottom:10px;
+      background-color: rgb(213, 230, 242);
+    }
+.modal {
+    display:none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    }
+
+.modal-content {
+    background-color: rgb(213, 230, 242);
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%;
+    }
+
+   .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+   .close:hover,
+    .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    #slider{
+    width: 100px;
+    }
+    #answ{
+    position: absolute;
+    right: 10px;
+    bottom:10px;
+        background-color: rgb(213, 230, 242);
+    }
+
+    #timesUp{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3.3em;
+    color: rgb(213, 230, 242);
+    }
+ 
+@media all and (max-width: 959px) and (min-width: 550px) {
+    #demo5{
+    margin-bottom: 100px;
+    margin-top: 15px;
+    width: 100%; 
+    }
+    #homeTitle{
+    width: 40%;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(213, 230, 242);
+    }
+    #homebtnsettings{
+    position: absolute;
+    bottom: 10%;
+    left: 10px; 
+    padding: 20px;
+      background-color: rgb(213, 230, 242);
+    }
+ #homebtnstart{
+    font-size: 15px;
+    font-family:fantasy;
+    position:absolute;
+    bottom: 10%;
+    right: 30%;
+    left: 30%; 
+    background-color: rgb(213, 230, 242);
+    } 
+ #mark{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:17%;
+    font-family: fantasy;
+    font-size: 10em; 
+    color: rgb(39, 222, 239);
+    }
+ .riddleContent{
+    position: absolute;
+    left:10%;
+    right:10%;
+    font-size: 26px;
+    color: rgb(213, 230, 242);
+    } 
+    .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 50px;
+    }
+    .answers {
+    position: absolute;
+    top:100px;
+    left:27%;
+    right:27%;
+    color: rgb(213, 230, 242);
+    }
+    #radio1{
+    margin-top: 50px;
+    font-size: 1.3em;
+    }
+    #radio{
+    font-size: 1.3em;
+    }
+    #results{
+    text-align: center;
+    font-size: 6em;
+    color: rgb(39, 222, 239);
+    }
+    #header{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+    color: rgb(213, 230, 242);
+   }
+    #reset{
+    position: absolute;
+    bottom: 10%;
+    right: 0; 
+    }
+    #timer{
+    position: absolute;
+    top: 15px;
+    right: 15px; 
+    font-size: 1.4em;
+    color: rgb(213, 230, 242);
+    }
+    #history{
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    right: 5%;
+    padding: 10px;
+    font-size: 2.1em;
+    color: rgb(213, 230, 242);
+    }
+    }
+ 
+@media all and (max-width: 549px) and (min-width: 400px) {
+    #demo5{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 100%; 
+    }
+    #homeTitle{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(213, 230, 242);
+    }
+ #homebtnstart{
+    font-size: 15px;
+    font-family:fantasy;
+    position:absolute;
+    bottom: 15%;
+    right: 20%;
+    left: 20%; 
+     background-color: rgb(213, 230, 242);
+    } 
+ #mark{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:25%;
+    font-family: fantasy;
+    font-size: 17em; 
+   color: rgb(39, 222, 239);
+    }
+ .riddleContent{
+    position: absolute;
+    margin-top: 40px;
+    left:9%;
+    right:9%;
+    font-size: 27px;
+    color: rgb(213, 230, 242);
+    } 
+    .quiz-container{
+    position: relative;
+    height: 350px;
+    margin-top: 50px;
+    }
+    .answers {
+    position: absolute;
+    top:250px;
+    left:5%;
+    right:5%;
+    color: rgb(213, 230, 242);
+    }
+    #radio1{
+    margin-top: 40px;
+    font-size: 1.4em;
+    }
+    #radio{
+    font-size: 1.3em;
+    }
+    #results{
+    text-align: center;
+    font-size: 9em;
+    color: rgb(39, 222, 239);
+    }
+    #header{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.3em;
+    color: rgb(213, 230, 242);
+   }
+    #timer{
+    position: absolute;
+    top: 15px;
+    right: 15px; 
+    font-size: 2em;
+    color: rgb(213, 230, 242);
+    }
+    #history{
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    right: 5%;
+    padding: 10px;
+    font-size: 2.1em;
+    color: rgb(213, 230, 242);
+   }
+    }
+
+
+@media all and (max-width: 400px) and (min-width: 350px) {
+ 
+ #demo5{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 100%; 
+    }
+ #homebtnstart{
+    font-size: 15px;
+    font-family:fantasy;
+    position:absolute;
+    bottom: 15%;
+    right: 20%;
+    left: 20%;  
+     background-color: rgb(213, 230, 242);
+    } 
+ #mark{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:25%;
+    font-family: fantasy;
+    font-size: 17em; 
+     color: rgb(39, 222, 239);
+    }    
+ .riddleContent{
+    position: absolute;
+    top:30px;
+    left:9%;
+    right:9%;
+    font-size: 25px;
+     color: rgb(213, 230, 242);
+    }
+    .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 60px;
+    }
+    .answers {
+    position: absolute;
+    top:190px;
+    left:5%;
+    right:5%;
+     color: rgb(213, 230, 242);
+    }
+    #radio1{
+    margin-top: 40px;
+    font-size: 1.4em;
+    }
+    #radio{
+    font-size: 1.3em;
+    }
+    #results{
+    text-align: center;
+    font-size: 8em;
+        color: rgb(39, 222, 239);
+    }
+    #header{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.3em;
+    color: rgb(213, 230, 242);
+   }
+    #timer{
+    position: absolute;
+    top: 15px;
+    right: 15px; 
+    font-size: 2em;
+    color: rgb(213, 230, 242);
+   }
+    #history{
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    right: 5%;
+    padding: 10px;
+    font-size: 1.9em;
+    color: rgb(213, 230, 242);
+   }
+}
+
+
+@media all and (max-width: 349px) and (min-width: 300px) {
+ 
+ #demo5{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 100%; 
+    }
+ #homebtnstart{
+    font-size: 15px;
+    font-family:fantasy;
+    position:absolute;
+    bottom: 15%;
+    right: 20%;
+    left: 20%;  
+     background-color: rgb(213, 230, 242);
+    } 
+ #mark{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:25%;
+    font-family: fantasy;
+    font-size: 17em; 
+     color: rgb(39, 222, 239);
+    }    
+ .riddleContent{
+    position: absolute;
+    top:20px;
+    left:9%;
+    right:9%;
+    font-size: 20px;
+     color: rgb(213, 230, 242);
+    }
+    .quiz-container{
+   position: relative;
+   height: 200px;
+   margin-top: 40px;
+    }
+    .answers {
+    position: absolute;
+    top:190px;
+    left:5%;
+    right:5%;
+    color: rgb(213, 230, 242);
+    }
+    #results{
+    text-align: center;
+    font-size: 6em;
+    color: rgb(39, 222, 239);
+    }
+    #radio1{
+    margin-top: 40px;
+    font-size: 1em;
+    }
+    #radio{
+    font-size: 1em;
+    }
+    #header{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2.3em;
+    color: rgb(213, 230, 242);
+   }
+    #timer{
+    position: absolute;
+    top: 15px;
+    right: 15px; 
+    font-size: 1.3em;
+    color: rgb(213, 230, 242);
+   }
+    #history{
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    right: 5%;
+    padding: 10px;
+    font-size: 1.6em;
+    color: rgb(213, 230, 242);
+   }
+}
+

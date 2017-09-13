@@ -1,7 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riddle Me This</title>
+     <link rel="stylesheet" href="jquery/mobileCustom.css"/>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="jquery/modernizr.css"/>
+    <link rel="stylesheet" href="css/riddleme.css"/>
+</head> 
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+ 
+  <!-- first 'page' -->
+<section data-role="page" id="first">
+	<div id="homeTitle">
+		<h1 id="demo5">Are you the Riddle MASTER</h1>
+	</div>
+    <div id="mark">?
+    </div> 
+   
+	<a href="#second" id="homebtnstart" onclick="startTimer();"class="ui-btn ui-corner-all ui-icon-arrow-d ui-btn-icon-bottom" data-transition="slideup" data-direction="reverse">RiddleMe</a>
+
+    <a id="homebtnsettings" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-gear"></a>
+    <div id="history"></div>
+    <div id="reset">
+	<a href="#" id="resetme" onClick="window.location.reload(); clearResults();" class="ui-btn ui-corner-all ui-btn-inline">RESET</a>	
+     </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+ <form>
+     <div id="slider">
+    <input type="checkbox" onclick="save();" name="checkbox-mini-0" id="checkbox" data-mini="true">
+    <label for="checkbox">Mute</label>
+         </div>
+</form>
+
+  </div>
+</div>
+	<div data-role="footer" data-position="fixed" class="footer">
+		<h4>Created by Augustine Thorbjornsen</h4>
+	</div><!-- /footer -->
+</section><!-- /page -->
+    
+
+   <!-- question 'page' --> 
+<section data-role="page" id="second">
+    <div id="timer"></div>
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+	<button id="next" class="ui-btn ui-corner-all ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">NEXT</button>
+<audio id="audioCLick" src="jquery/multimedia_button_click_011.mp3" ></audio>
+    <audio id="gameover" src="jquery/Game%20Over%20sound%20effect.mp3" ></audio>
+    <audio id="audioTickTock" src="jquery/Tick%20Tock-SoundBible.com-1165545065.mp3"></audio>
+	<a href="#third" onclick="showResults(); stopTimer(); play1();" class="ui-btn ui-corner-all ui-btn-inline" id="submit" data-transition="slide" data-direction="reverse">FINISH</a>
+ </section>
+
+    
+       <!-- score 'page' -->
+<section data-role="page" id="third">
+    <div id="timesUp"></div>
+	<div id="header"> 
+		<h1>Score!</h1>
+	</div><!-- /header --> 
+	<div data-role="content">
+  <a id="home" href="#first" onclick="history1();"class="ui-btn ui-corner-all ui-btn-inline ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">HOME</a>
+ <div id="results"></div> 
+<!--
+    <div>
+	<a href="#second" id="restart" onclick="resetme();" class="ui-btn ui-corner-all"  data-transition="slideup" data-direction="reverse">Riddle Me Again</a>
+    </div> 
+-->
+	<a href="#fourth" id="answ"class="ui-btn ui-corner-all ui-btn-inline ui-icon-arrow-r ui-btn-icon-right" data-transition="slide">ANSWERS</a>	
+	</div><!-- /content -->  
+</section><!-- /page -->  
+    
+   <!-- Answers 'page' --> 
+<section data-role="page" id="fourth">
+<div class="quiz-container">
+  <div id="quiz2"></div>
+</div>
+    <a href="#third" id="previous" class="ui-btn ui-corner-all ui-btn-inline ui-icon-arrow-l ui-btn-icon-left" >BACK</a>
+	<button id="next1" class="ui-btn ui-corner-all ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">NEXT</button>
+ </section>
+
+
+    <script src="jquery/jquery-1.11.1.min.js"></script>
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery/modernizr-custom.js"></script>
+    <script src="jquery/FitText.js-master/jquery.fittext.js"></script>
+    <script src="jquery/Lettering.js-master/jquery.lettering.js"></script>
+    <script src="jquery/CircleType-master/js/circletype.min.js"></script>
+    <script src="jquery/riddlemeMain.js"></script>
+   
 </body>
 </html>
